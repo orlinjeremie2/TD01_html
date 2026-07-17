@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualite - TechInnov Gabon</title>
+    <!-- Liaison avec ta feuille de style CSS globale -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">TechInnov</div>
+        <nav aria-label="Menu principal">
+            <ul>
+                <!-- Liens désynchronisés (pointent temporairement vers #) -->
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Nos services</a></li>
+                <!-- Seul le lien de la page actuelle reste actif et connecté -->
+                <li><a href="actualite.html" class="active" aria-current="page">Actualités</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="news-container">
+        <section id="news-feed">
+            <h1>À la une aujourd'hui</h1>
+
+            <article class="news-card">
+                <h2>Lancement de la nouvelle plateforme d'apprentissage de l'UNG</h2>
+                <p class="news-date"><time datetime="2026-07-15">15 juillet 2026</time></p>
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&amp;w=400&amp;auto=format&amp;fit=crop" alt="Étudiante qui suit un cours en ligne sur son ordinateur portable" width="400" height="267">
+                <p>L'Université Numérique du Gabon déploie sa nouvelle infrastructure pour faciliter l'accès aux cours en ligne pour tous ses étudiants.</p>
+                <p><a href="#" class="read-more">Lire la suite de l'article sur la plateforme</a></p>
+            </article>
+
+            <article class="news-card">
+                <h2>Le développement du numérique en Afrique Centrale</h2>
+                <p class="news-date"><time datetime="2026-07-14">14 juillet 2026</time></p>
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&amp;w=400&amp;auto=format&amp;fit=crop" alt="Représentation visuelle de la connexion internet mondiale et des serveurs" width="400" height="267">
+                <p>Une analyse approfondie des récents investissements technologiques et des perspectives d'avenir pour l'économie numérique régionale.</p>
+                <p><a href="#" class="read-more">Lire la suite de l'article sur le numérique</a></p>
+            </article>
+
+            <article class="news-card">
+                <h2>Atelier pratique : Maîtriser le HTML5 et le CSS3</h2>
+                <p class="news-date"><time datetime="2026-07-12">12 juillet 2026</time></p>
+                <!-- On utilise ton image locale "photo2.jpeg" à la place de l'image Unsplash ! -->
+                <img src="photo2.jpeg" alt="Lignes de code HTML et CSS affichées sur l'écran" width="400" height="267" style="object-fit: cover;">
+                <p>Retour sur le succès du dernier atelier intensif organisé ce week-end à destination des étudiants de première année.</p>
+                <p><a href="#" class="read-more">Lire la suite de l'article sur l'atelier</a></p>
+            </article>
+        </section>
+
+        <aside class="news-sidebar">
+            <h3>À propos de nous</h3>
+            <p>TechInnov accompagne les talents de demain dans l'acquisition de compétences numériques clés au Gabon.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="newsletter-section">
+            <h3>S'abonner à la newsletter</h3>
+            <form action="#" method="post" class="newsletter-form">
+                <p>
+                    <label for="email">Votre adresse e-mail :</label>
+                    <input type="email" id="email" name="email" required placeholder="exemple@domaine.com">
+                </p>
+                <p class="checkbox-container">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">J'accepte de recevoir les actualités hebdomadaires.</label>
+                </p>
+                <p>
+                    <button type="submit" class="btn-primary">S'abonner</button>
+                </p>
+            </form>
+        </div>
+        <p>&copy; 2026 TechInnov Gabon. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
